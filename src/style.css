@@ -1,1 +1,16 @@
-/* styles go here */
+.inputs {
+  display: block;
+  padding: 5px 0;
+}
+
+.top {
+  padding-top: 0;
+}
+
+.bottom {
+  padding-bottom: 0;
+}
+
+.blocks {
+  margin-bottom: 20px;
+}
