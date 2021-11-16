@@ -12,8 +12,6 @@
   </head>
   <body>
 
-    <script type="text/javascript" src="./main.js"></script>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
@@ -22,179 +20,214 @@
       <fieldset class="blocks">
         <legend>Personal information</legend>
 
-        <label for="your-surname" class="inputs top">
-          Surname:
+        <div class="inputs top">
+          <label for="yourSurname">
+            Surname:
 
-          <input type="text"
-            name="surname"
-            id="your-surname"
-            autocomplete="off"
-          >
-        </label>
+            <input
+              type="text"
+              name="surname"
+              id="yourSurname"
+              autocomplete="off"
+            >
+          </label>
+        </div>
 
-        <label for="your-name" class="inputs">
-          Name:
+        <div class="inputs">
+          <label for="yourName">
+            Name:
 
-          <input type="text"
-            name="name"
-            id="your-name"
-            autocomplete="off"
-          >
-        </label>
+            <input
+              type="text"
+              name="name"
+              id="yourName"
+              autocomplete="off"
+            >
+          </label>
+        </div>
 
-        <label for="your-age" class="inputs">
-          How old are You?
+        <div class="inputs">
+          <label for="yourAge">
+            How old are You?
 
-          <input type="number"
-            name="age"
-            min="12"
-            max="100"
-            value="12"
-            id="your-age"
-          >
-        </label>
+            <input
+              type="number"
+              name="age"
+              min="12"
+              max="100"
+              value="12"
+              id="yourAge"
+            >
+          </label>
+        </div>
 
-        <label for="your-birth" class="inputs">
-          Full date of birth:
+        <div class="inputs">
+          <label for="yourBirth">
+            Full date of birth:
 
-          <input type="date"
-            name="date-of-birth"
-            id="your-birth"
-          >
-        </label>
+            <input
+              type="date"
+              name="dateOfBirth"
+              id="yourBirth"
+            >
+          </label>
+        </div>
 
-        <label for="accept-it" class="inputs bottom">
-          I accept the term of the agreement
+        <div class="bottom">
+          <label for="acceptIt">
+            I accept the term of the agreement
 
-          <input type="checkbox"
-            name="accept"
-            id="accept-it"
-            required
-          >
-        </label>
+            <input
+              type="checkbox"
+              name="accept"
+              id="acceptIt"
+              required
+            >
+          </label>
+        </div>
       </fieldset>
 
       <fieldset class="blocks">
         <legend>Registration</legend>
 
-        <label for="your-mail" class="inputs top">
-          E-mail:
+        <div class="inputs top">
+          <label for="yourMail">
+            E-mail:
 
-          <input type="email"
-            placeholder="email@example.com"
-            id="your-mail"
-            multiple
-          >
-        </label>
+            <input
+              type="email"
+              placeholder="email@example.com"
+              id="yourMail"
+              multiple
+            >
+          </label>
+        </div>
 
-        <label for="your-password" class="inputs bottom">
-          Password
+        <div class="button">
+          <label for="yourPassword">
+            Password
 
-          <input type="password"
-            required
-            minlength="6"
-            maxlength="35"
-            id="your-password"
-          >
-        </label>
+            <input
+              type="password"
+              required
+              minlength="6"
+              maxlength="35"
+              id="yourPassword"
+            >
+          </label>
+        </div>
       </fieldset>
 
       <fieldset class="blocks">
         <legend>An interesting fact about you!</legend>
 
         <div class="inputs top">
-          Do you love cats?
+          <span>Do you love cats?</span>
 
-          <label for="loving-cats">
-            <input type="radio"
+          <label for="lovingCats">
+            <input
+              type="radio"
               name="cats"
-              id="loving-cats"
+              id="lovingCats"
               value="yes"
             >
             Yes
           </label>
 
-          <label for="not-loving-cats">
-            <input type="radio"
+          <label for="notLovingCats">
+            <input
+              type="radio"
               name="cats"
-              id="not-loving-cats"
+              id="notLovingCats"
               value="no"
             >
             No
           </label>
         </div>
 
-        <label for="your-color" class="inputs">
-          What is your favorite color?
+        <div class="inputs">
+          <label for="yourColor">
+            What is your favorite color?
 
-          <input type="color"
-            name="color"
-            id="your-color">
-        </label>
+            <input
+              type="color"
+              name="color"
+              id="yourColor"
+            >
+          </label>
+        </div>
 
-        <label for="going-sleep" class="inputs">
-          What time do you go to bed?
+        <div class="inputs">
+          <label for="goingSleep">
+            What time do you go to bed?
 
-          <input type="time"
-            name="time"
-            id="going-sleep">
-        </label>
+            <input
+              type="time"
+              name="time"
+              id="goingSleep"
+            >
+          </label>
+        </div>
 
+        <div class="inputs">
+          <label for="yourCar">
+            What are your favorite brand of cars?
 
-        <label for="your-car" class="inputs">
-          What are your favorite brand of cars?
+            <select
+              name="cars"
+              id="yourCar"
+              multiple
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
 
-          <!-- <input type="text"
-            name="cars"
-            id="your-car"
-            value="BMW Audi Lada"
-          > -->
-          <select name="cars"
-            id="your-car"
-            multiple
-          >
-            <option value="BMW">BMW</option>
-            <option value="Audi">Audi</option>
-            <option value="Lada">Lada</option>
-            <option value=""></option>
-          </select>
-        </label>
+        <div class="bottom">
+          <label for="rating">
+            How do you rate our work?
 
-        <label for="rating" class="inputs bottom">
-          How do you rate our work?
-
-          <input type="range"
-            name="rate"
-            id="rating"
-          >
-        </label>
+            <input
+              type="range"
+              name="rate"
+              id="rating"
+            >
+          </label>
+        </div>
       </fieldset>
 
       <fieldset class="blocks">
         <legend>Additional info:</legend>
 
-        <label for="your-comments" class="inputs top">
+        <div class="inputs top">
+          <label for="yourComments">
             Comments:
 
-          <textarea name="comments"
-            id="your-comments"
-            rows="2"
-            cols="20"
-         ></textarea>
-        </label>
+            <textarea
+              name="comments"
+              id="yourComments"
+              rows="2"
+              cols="20"
+           ></textarea>
+          </label>
+        </div>
 
-        <label for="your-recommends" class="inputs bottom">
-          Would you recommend us?
+        <div class="bottom">
+          <label for="yourRecommends">
+            Would you recommend us?
 
-          <select name="recommendations" id="your-recommends">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
-        </label>
+            <select name="recommendations" id="yourRecommends">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </label>
+        </div>
       </fieldset>
-
 
       <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
